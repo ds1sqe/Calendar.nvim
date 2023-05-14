@@ -1,11 +1,13 @@
 # Calendar Implementation with lua
 
 create calender string output.
+you can easily use this as dashboard header or like that things by
 
 ```lua
 
 require("calendar").getCalendar()
 -- this will returns you a calender string.
+-- no config needed
 
 ```
 
