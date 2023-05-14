@@ -21,15 +21,11 @@ M.__yearMonth = function(year, monthName)
 	local outputL = string.format("%30s", year)
 	local outputM = "  "
 	local outputR = string.format("%-30s", monthName)
-	return "│" .. outputL .. outputM .. outputR .. "│"
+	return "│" .. outputL .. outputM .. outputR .. "│\n"
 end
-
-M.__days = function() end
 
 M.createOutput = function()
 	local date = require("date").getDate()
-
-	--├────────┼────────┼────────┼────────┼────────┼────────┼────────┤
 
 	local start = date.prevMonthLastDay - date.currentMonthfirstDayWday + 1
 	local pos = { ["line"] = 1, ["col"] = 1 }
