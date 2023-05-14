@@ -18,10 +18,11 @@
 local M = {}
 
 M.__Header = function(dayName, monthName, day, year)
-	local outputL = string.format("%31s", (dayName .. " " .. monthName))
-	local outputM = " "
-	local outputR = string.format("%-30s", (day .. " " .. year))
-	return "│" .. outputL .. outputM .. outputR .. "│\n"
+	local mid = dayName .. " " .. monthName .. " " .. day .. " " .. year
+	local spaces = (62 - string.len(mid))
+	local paddingL = (" "):rep(spaces / 2 + spaces % 2)
+	local paddingR = (" "):rep(spaces / 2)
+	return "│" .. paddingL .. mid .. paddingR .. "│\n"
 end
 
 M.createOutput = function()
