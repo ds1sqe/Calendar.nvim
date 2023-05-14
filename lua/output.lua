@@ -40,7 +40,7 @@ M.createOutput = function()
 	for i = 1, date.currentMonthLastDay, 1 do
 		local day = ""
 		if i == date.day then
-			day = "✅(" .. i .. ") "
+			day = "✅ (" .. i .. ")"
 		else
 			day = "" .. i
 		end
