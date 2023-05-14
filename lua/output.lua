@@ -27,7 +27,7 @@ end
 M.createOutput = function()
 	local date = require("date").getDate()
 
-	local start = date.prevMonthLastDay - date.currentMonthfirstDayWday + 1
+	local start = date.prevMonthLastDay - date.currentMonthfirstDayWday
 	local pos = { ["line"] = 1, ["col"] = 1 }
 
 	local days = ""
@@ -44,7 +44,7 @@ M.createOutput = function()
 		else
 			day = "" .. i
 		end
-		local paddingL = (" "):rep((8 - string.len(day)) / 2 + (8 - string.len(day)) % 2)
+		local paddingL = (" "):rep((8 - string.len(day)) / 2 + (8 - string.len(day)) % 2 + 1)
 		local paddingR = (" "):rep((8 - string.len(day)) / 2)
 
 		days = days .. "│" .. paddingL .. day .. paddingR
