@@ -51,7 +51,7 @@ M.createOutput = function()
 		local paddingL = (" "):rep((8 - string.len(day)) / 2 + (8 - string.len(day)) % 2)
 		local paddingR = (" "):rep((8 - string.len(day)) / 2)
 
-		days = days .. "│" .. paddingL + day .. paddingR
+		days = days .. "│" .. paddingL .. day .. paddingR
 		if pos.col == 7 then
 			days = days
 				.. "│\n"
