@@ -43,7 +43,15 @@ M.__monthName = {
 	[11] = "November",
 	[12] = "December",
 }
-
+M.__dayName = {
+	[1] = "Sunday",
+	[2] = "Monday",
+	[3] = "Tuesday",
+	[4] = "Wednesday",
+	[5] = "Thursday",
+	[6] = "Friday",
+	[7] = "Saturday",
+}
 M.__getDate = function(time)
 	-- if time provided, return date generated with argument
 	if time then
@@ -78,6 +86,9 @@ end
 M.__getMonthName = function(month)
 	return M.__monthName[month]
 end
+M.__getDayName = function(wday)
+	return M.__dayName[wday]
+end
 
 M.getDate = function()
 	-- return easy-to use date data
@@ -92,6 +103,7 @@ M.getDate = function()
 		["day"] = date.day,
 		["wday"] = date.wday,
 		["monthName"] = M.__getMonthName(date.month),
+		["dayName"] = M.__getDayName(date.wday),
 	}
 	return D
 end

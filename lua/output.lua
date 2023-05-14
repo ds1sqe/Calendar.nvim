@@ -17,10 +17,10 @@
 
 local M = {}
 
-M.__yearMonth = function(year, monthName)
-	local outputL = string.format("%30s", year)
+M.__Header = function(dayName, monthName, day, year)
+	local outputL = string.format("%30s", (dayName .. " " .. monthName))
 	local outputM = "  "
-	local outputR = string.format("%-30s", monthName)
+	local outputR = string.format("%-30s", (day .. " " .. year))
 	return "│" .. outputL .. outputM .. outputR .. "│\n"
 end
 
@@ -74,7 +74,7 @@ M.createOutput = function()
 
 	local output = (
 		"┌──────────────────────────────────────────────────────────────┐\n"
-		.. M.__yearMonth(date.year, date.monthName)
+		.. M.__Header(date.dayName, date.monthName, date.day, date.year)
 		.. "├────────┬────────┬────────┬────────┬────────┬────────┬────────┤\n"
 		.. "│ ☀️S Sun │ 🌕 Mon │ 🔥 Tue │ 🌊 Wed │ 🪵 Thu │ 🥇 Fri │ 🏖️ Sat │\n"
 		.. "├────────┼────────┼────────┼────────┼────────┼────────┼────────┤\n"
