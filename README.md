@@ -17,4 +17,5 @@ require("calendar").getCalendar()
 
 ##### with dashboard plugins
 
-![sample img1 ](./docs/sample2.png)
+![sample img2 ](./docs/sample2.png)
+![sample img3 ](./docs/sample3.png)
