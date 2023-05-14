@@ -55,6 +55,7 @@ M.createOutput = function()
 			pos.col = 1
 			pos.line = pos.line + 1
 		end
+		pos.col = pos.col + 1
 	end
 
 	local nextday = 1
