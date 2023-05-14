@@ -43,8 +43,8 @@ M.createOutput = function()
 		local day = ""
 		if i == date.day then
 			day = "✅(" .. i .. ")"
-			paddingL = (" "):rep((8 - string.len(day)) / 2 + (8 - string.len(day)) % 2 + 1)
-			paddingR = (" "):rep((8 - string.len(day)) / 2)
+			paddingL = (" "):rep((8 - string.len(day)) / 2 + (8 - string.len(day)) % 2)
+			paddingR = (" "):rep((8 - string.len(day)) / 2 + 1)
 		else
 			day = "" .. i
 			paddingL = (" "):rep((8 - string.len(day)) / 2 + (8 - string.len(day)) % 2)
