@@ -9,6 +9,4 @@ require("calendar").getCalendar()
 
 ```
 
-## calender
-
 ![sample img](./docs/sample.png)
