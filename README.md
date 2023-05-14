@@ -1,7 +1,9 @@
 # Calendar Implementation with lua
 
-create calender string output.
-you can easily use this as dashboard header or like that things by
+Create calender string output to you.
+
+You can easily use this as dashboard header
+or like those things by
 
 ```lua
 
