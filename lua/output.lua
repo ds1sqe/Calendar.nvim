@@ -18,9 +18,9 @@
 local M = {}
 
 M.__Header = function(dayName, monthName, day, year)
-	local outputL = string.format("%30s", (dayName .. "  " .. monthName))
-	local outputM = "  "
-	local outputR = string.format("%-30s", (day .. "  " .. year))
+	local outputL = string.format("%31s", (dayName .. " " .. monthName))
+	local outputM = " "
+	local outputR = string.format("%-30s", (day .. " " .. year))
 	return "│" .. outputL .. outputM .. outputR .. "│\n"
 end
 
