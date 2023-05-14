@@ -1,5 +1,14 @@
 # Calendar Implementation with lua
 
-# Sample output
+create calender string output.
+
+```lua
+
+require("calendar").getCalendar()
+-- returns you a calender string.
+
+```
+
+## calender
 
 ![sample img](./docs/sample.png)
