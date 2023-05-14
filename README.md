@@ -5,8 +5,16 @@ create calender string output.
 ```lua
 
 require("calendar").getCalendar()
--- returns you a calender string.
+-- this will returns you a calender string.
 
 ```
 
-![sample img](./docs/sample.png)
+### Showcase
+
+##### string output
+
+![sample img1 ](./docs/sample.png)
+
+##### with dashboard plugins
+
+![sample img1 ](./docs/sample2.png)
